@@ -1,0 +1,26 @@
+
+Ÿ	java:S116İ"\Rename this field "PROFILE_IMAGE_DIR" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½Í¶ê8öÉÊ¿÷1J$bc0c3150-2413-4c29-bb93-2fadc55fd20d
+e
+java:S1170İ"!Make this final field static too.(½Í¶ê8†ÊÊ¿÷1J$57e7e0e6-87e4-446a-8469-1248e75d3d6d
+¦
+java:S4144>"cUpdate this method so that its implementation is not identical to "handleMorePaneHover" on line 45.(¸ıÅ´8§ÊÊ¿÷1J$53a8c2a4-1ea9-4160-8fff-24519acd0006
+Ÿ
+java:S1450L"\Remove the "editImageView" field and declare it as a local variable in the relevant methods.(İ­˜Ö8ÕŒø1J$a606d724-9359-4f4e-9113-d74ce4f2e32c
+o
+java:S1602d",Remove useless curly braces around statement(ïø‹²8õÊÊ¿÷1J$8fa48492-bc95-4110-9eac-3c07604db5ed
+o
+java:S1602g",Remove useless curly braces around statement(ü©à8®ËÊ¿÷1J$82527455-7277-4674-a393-584247e59e95
+n
+java:S1602o",Remove useless curly braces around statement(³·µs8ÄËÊ¿÷1J$9249500d-3b9f-4270-9248-0c9ea89a964e
+ˆ
+java:S1117"?Rename "targetPath" which hides the field declared at line 355.(ª¹Áßüÿÿÿÿ8äËÊ¿÷1J$62e8a841-dfe5-41bb-b7cf-b66d43840a75
+n	java:S106"+Replace this use of System.err by a logger.(¶ã“Ô8ÑÕŒø1J$62d06133-58cd-41ab-8c8c-d98700561166
+¯
+java:S1130“"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(Ê€Ö[8‚ÍÊ¿÷1J$34f92c26-5728-498c-b2bd-081ea822b192
+n	java:S106›"+Replace this use of System.err by a logger.(Ø•úµ8‰ÖŒø1J$da753e00-2648-4322-8ff2-321007c0bd8f
+m	java:S106¡"+Replace this use of System.err by a logger.(×ª‘$8‹ÖŒø1J$9e3314fc-385f-453c-9b80-2be2cf766550
+Š
+java:S1075¦"ARefactor your code to get this URI from a customizable parameter.(×ñ¨«ıÿÿÿÿ8˜ÎÊ¿÷1J$dde4fe2e-f908-4168-82fe-4c0d8dadad94
+m	java:S106­"+Replace this use of System.err by a logger.(Ù†Ák8’ÖŒø1J$8c2c2bf9-108e-4d15-8c01-36daa6612b74
+w
+java:S1068ã".Remove this unused "targetPath" private field.(º÷şÿÿÿÿ8ĞÎÊ¿÷1J$62aa808c-774d-4344-a05f-83cd62a5e2cd

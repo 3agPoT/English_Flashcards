@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+            prefWidth="1000.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.english_flashcards.controller.login_reg.RegisterController">
+    <children>
+        <AnchorPane prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: #435464;">
+            <children>
+                <ImageView fx:id="learningButton" fitHeight="500.0" fitWidth="500.0" layoutY="50.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@Images/logo.jpg"/>
+                    </image>
+                </ImageView>
+            </children>
+            <cursor>
+                <Cursor fx:constant="DEFAULT"/>
+            </cursor>
+        </AnchorPane>
+        <AnchorPane layoutX="500.0" prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: #ffffff;">
+            <children>
+                <TextField fx:id="usernameField" layoutX="107.0" layoutY="184.0" prefHeight="38.0" prefWidth="290.0"
+                           promptText="Ім'я користувача"
+                           style="-fx-background-color: transparent; -fx-border-color: #435563; -fx-border-width: 0px 0px 2px 0px;"/>
+                <Label layoutX="166.0" layoutY="72.0" text="Реєстрація" textAlignment="CENTER" textFill="#435563">
+                    <font>
+                        <Font name="System Bold" size="30.0"/>
+                    </font>
+                </Label>
+                <JFXButton layoutX="105.0" layoutY="428.0" onAction="#register" prefHeight="46.0" prefWidth="290.0"
+                           style="-fx-background-color: #435464;" text="Зареєструватись" textAlignment="CENTER"
+                           textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="15.0"/>
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND"/>
+                    </cursor>
+                </JFXButton>
+                <ImageView fitHeight="46.0" fitWidth="37.0" layoutX="60.0" layoutY="184.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@Images/user.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="60.0" layoutY="312.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@Images/padlock.png"/>
+                    </image>
+                </ImageView>
+                <JFXButton fx:id="loginButton" layoutX="295.0" layoutY="496.0" onAction="#login" text="Вхід"
+                           textAlignment="CENTER" textFill="#435563" underline="true">
+                    <cursor>
+                        <Cursor fx:constant="HAND"/>
+                    </cursor>
+                    <font>
+                        <Font name="System Bold" size="12.0"/>
+                    </font>
+                </JFXButton>
+                <Label layoutX="182.0" layoutY="500.0" text="У вас вже є аккаунт?"/>
+                <PasswordField fx:id="passwordField" layoutX="107.0" layoutY="311.0" prefHeight="38.0" prefWidth="290.0"
+                               promptText="Пароль"
+                               style="-fx-background-color: transparent; -fx-border-color: #435563; -fx-border-width: 0px 0px 2px 0px;"/>
+                <TextField fx:id="emailField" layoutX="107.0" layoutY="248.0" prefHeight="38.0" prefWidth="290.0"
+                           promptText="Електронна пошта"
+                           style="-fx-background-color: transparent; -fx-border-color: #435563; -fx-border-width: 0px 0px 2px 0px;"/>
+                <ImageView fitHeight="37.0" fitWidth="45.0" layoutX="60.0" layoutY="249.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@Images/email.png"/>
+                    </image>
+                </ImageView>
+                <JFXCheckBox checkedColor="#435563" layoutX="107.0" layoutY="378.0"
+                             text="Я згоден з положеннями та умовами"/>
+                <Label fx:id="errorLabel" alignment="CENTER" layoutY="540.0" prefHeight="18.0" prefWidth="500.0"
+                       textFill="#FF0000">
+                    <font>
+                        <Font name="Arial Bold Italic" size="14.0"/>
+                    </font>
+                </Label>
+                <ImageView fitHeight="26.0" fitWidth="28.0" layoutX="364.0" layoutY="318.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@Images/eye.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="26.0" fitWidth="28.0" layoutX="364.0" layoutY="318.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@Images/hidden.png"/>
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+            prefWidth="1000.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.english_flashcards.controller.passreset.VerifyCodeController">
+    <children>
+        <AnchorPane prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: #435464;">
+            <children>
+                <ImageView fitHeight="621.0" fitWidth="500.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Images/logo.jpg"/>
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="500.0" prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: #ffffff;">
+            <Label alignment="CENTER" layoutX="21.0" layoutY="112.0" prefHeight="97.0" prefWidth="458.0"
+                   text="Перевірте свою електронну адресу" textAlignment="CENTER" textFill="#435563" wrapText="true">
+                <font>
+                    <Font name="System Bold" size="28.0"/>
+                </font>
+            </Label>
+            <!-- Групування полів у HBox для автоматичного розташування -->
+            <HBox layoutX="70" layoutY="320" spacing="10">
+                <TextField fx:id="codeField1" alignment="CENTER" prefHeight="50.0" prefWidth="50.0"
+                           style="-fx-font-size: 24px;"/>
+                <TextField fx:id="codeField2" alignment="CENTER" prefHeight="50.0" prefWidth="50.0"
+                           style="-fx-font-size: 24px;"/>
+                <TextField fx:id="codeField3" alignment="CENTER" prefHeight="50.0" prefWidth="50.0"
+                           style="-fx-font-size: 24px;"/>
+                <TextField fx:id="codeField4" alignment="CENTER" prefHeight="50.0" prefWidth="50.0"
+                           style="-fx-font-size: 24px;"/>
+                <TextField fx:id="codeField5" alignment="CENTER" prefHeight="50.0" prefWidth="50.0"
+                           style="-fx-font-size: 24px;"/>
+                <TextField fx:id="codeField6" alignment="CENTER" prefHeight="50.0" prefWidth="50.0"
+                           style="-fx-font-size: 24px;"/>
+            </HBox>
+            <ImageView fitHeight="98.0" fitWidth="116.0" layoutX="201.0" layoutY="14.0" pickOnBounds="true"
+                       preserveRatio="true">
+                <image>
+                    <Image url="@Images/email.gif"/>
+                </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="70.0" layoutY="210.0" prefHeight="22.0" prefWidth="359.0"
+                   text="Введіть код, який був надісланий на пошту" textAlignment="CENTER" textFill="#5c778c"
+                   wrapText="true">
+                <font>
+                    <Font name="System Bold" size="16.0"/>
+                </font>
+            </Label>
+            <Label fx:id="emailLabel" alignment="CENTER" layoutX="111.0" layoutY="252.0" prefHeight="20.0"
+                   prefWidth="278.0">
+                <font>
+                    <Font name="System Bold Italic" size="14.0"/>
+                </font>
+            </Label>
+            <JFXButton onAction="#handleResetPassword" layoutX="105.0" layoutY="399.0" prefHeight="46.0" prefWidth="290.0"
+                       style="-fx-background-color: #435563;" text="Скинути пароль" textAlignment="CENTER"
+                       textFill="WHITE">
+                <font>
+                    <Font name="System Bold" size="15.0"/>
+                </font>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </JFXButton>
+            <Label fx:id="errorLabel" alignment="CENTER" layoutY="486.0" prefHeight="18.0" prefWidth="500.0"
+                   textFill="#FF0000">
+                <font>
+                    <Font name="Arial Bold Italic" size="14.0"/>
+                </font>
+            </Label>
+        </AnchorPane>
+    </children>
+</AnchorPane>

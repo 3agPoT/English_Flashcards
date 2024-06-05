@@ -1,0 +1,8 @@
+
+¦
+java:S41444"cUpdate this method so that its implementation is not identical to "handleMorePaneHover" on line 35.(¸ıÅ´8û‚¢Œø1J$daca4f20-fbc1-4153-8065-56a17f11ab09
+s	java:S106"+Replace this use of System.out by a logger.(£øö¶ÿÿÿÿÿ8ãè§Ïü1J$ef4daa2c-083a-4ab5-9a96-aa4c4327b2c9
+|
+java:S1854Å"8Remove this useless assignment to local variable "user".(“ïÛ¨8Íƒ¢Œø1J$75c5a59c-0974-4dcd-8926-fa0191b3fa1c
+m
+java:S1481Å")Remove this unused "user" local variable.(“ïÛ¨8Òƒ¢Œø1J$a3614c55-0d3b-4d5d-a653-3bfd66b2e395

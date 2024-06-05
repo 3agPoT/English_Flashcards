@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1500.0" style="-fx-background-color: #131f24;"
+            xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.english_flashcards.controller.menu.shop.ShopController">
+    <stylesheets>
+        <URL value="@styles.css"/>
+    </stylesheets>
+    <AnchorPane prefHeight="600.0" prefWidth="300.0" style="-fx-background-color: #131f24;">
+        <Label contentDisplay="CENTER" layoutX="34.0" prefHeight="120.0" prefWidth="265.0" text="English Flashcards"
+               textFill="#5bcb04">
+            <font>
+                <Font name="Comic Sans MS Italic" size="26.0"/>
+            </font>
+        </Label>
+        <JFXButton layoutX="25.0" layoutY="128.0" onAction="#menu" prefHeight="50.0" prefWidth="250.0"
+                   styleClass="hover-button" text="НАВЧАННЯ" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0"/>
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </JFXButton>
+        <JFXButton layoutX="25.0" layoutY="218.0" onAction="#quests" prefHeight="50.0" prefWidth="250.0"
+                   styleClass="hover-button" text="КВЕСТИ" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0"/>
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </JFXButton>
+        <JFXButton layoutX="25.0" layoutY="300.0" prefHeight="50.0" prefWidth="250.0"
+                   styleClass="hover-button" text="МАГАЗИН" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0"/>
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </JFXButton>
+        <JFXButton layoutX="25.0" layoutY="383.0" onAction="#profile" prefHeight="50.0" prefWidth="250.0"
+                   styleClass="hover-button"
+                   text="ПРОФІЛЬ" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0"/>
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </JFXButton>
+        <JFXButton layoutX="25.0" layoutY="462.0" onMouseEntered="#handleMoreButtonHover"
+                   onMouseExited="#handleMoreButtonExit" prefHeight="50.0" prefWidth="250.0" styleClass="hover-button"
+                   text="БІЛЬШЕ" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0"/>
+            </font>
+            <cursor>
+                <Cursor fx:constant="DEFAULT"/>
+            </cursor>
+        </JFXButton>
+        <ImageView onMouseClicked="#imagehouse" fitHeight="35.0" fitWidth="35.0" layoutX="34.0" layoutY="136.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@Images/house.png"/>
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </ImageView>
+        <ImageView onMouseClicked="#imagequests" fitHeight="35.0" fitWidth="35.0" layoutX="34.0" layoutY="225.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@Images/chest.png"/>
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </ImageView>
+        <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="34.0" layoutY="308.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@Images/shop.png"/>
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </ImageView>
+        <ImageView onMouseClicked="#imageusergame" fitHeight="35.0" fitWidth="35.0" layoutX="34.0" layoutY="391.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@Images/usergame.png"/>
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </ImageView>
+        <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="34.0" layoutY="470.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@Images/more.png"/>
+            </image>
+        </ImageView>
+    </AnchorPane>
+    <Line endX="-235.5999755859375" endY="-386.0" layoutX="535.0" layoutY="160.0" startX="-235.5999755859375"
+          startY="690.0" stroke="#867e7e"/>
+    <Line endX="1462.699951171875" endY="690.0" layoutX="246.0" layoutY="163.0" startX="-235.5999755859375"
+          startY="690.0" stroke="131f24"/>
+    <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="1346.0" layoutY="23.0" pickOnBounds="true"
+               preserveRatio="true">
+        <image>
+            <Image url="@Images/heart.png"/>
+        </image>
+    </ImageView>
+    <Label alignment="CENTER" layoutX="1386.0" layoutY="23.0" prefHeight="40.0" prefWidth="40.0" text="5"
+           textFill="#d1403f">
+        <font>
+            <Font name="System Bold" size="20.0"/>
+        </font>
+    </Label>
+    <Label alignment="CENTER" layoutX="1256.0" layoutY="23.0" prefHeight="40.0" prefWidth="40.0" text="230"
+           textFill="#f39e09">
+        <font>
+            <Font name="System Bold" size="20.0"/>
+        </font>
+    </Label>
+    <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="1216.0" layoutY="23.0" pickOnBounds="true"
+               preserveRatio="true">
+        <image>
+            <Image url="@Images/dollar.png"/>
+        </image>
+    </ImageView>
+    <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="1126.0" layoutY="23.0" pickOnBounds="true"
+               preserveRatio="true">
+        <image>
+            <Image url="@Images/weekend.png"/>
+        </image>
+    </ImageView>
+    <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="1036.0" layoutY="23.0" pickOnBounds="true"
+               preserveRatio="true">
+        <image>
+            <Image url="@Images/united-states.png"/>
+        </image>
+    </ImageView>
+    <AnchorPane layoutX="419.0" layoutY="23.0" prefHeight="200.0" prefWidth="527.0" styleClass="form-profile"
+                stylesheets="@styles.css"/>
+    <AnchorPane layoutX="1026.0" layoutY="100.0" prefHeight="120.0" prefWidth="410.0" styleClass="form-menu"
+                stylesheets="@styles.css"/>
+    <AnchorPane fx:id="moreOptionsPane" onMouseEntered="#handleMorePaneHover" onMouseExited="#handleMorePaneExit"
+                layoutX="280.0" layoutY="462.0" prefHeight="200.0" prefWidth="200.0"
+                styleClass="form" visible="false">
+        <JFXButton layoutY="80.0" prefHeight="40.0" prefWidth="195.0" styleClass="check-button" text="НАЛАШТУВАННЯ"
+                   textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0"/>
+            </font>
+        </JFXButton>
+        <JFXButton layoutY="120.0" prefHeight="40.0" prefWidth="195.0" styleClass="check-button" text="ДОВІДКА"
+                   textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0"/>
+            </font>
+        </JFXButton>
+        <JFXButton onAction="#handleExitButtonClick" layoutY="160.0" prefHeight="40.0" prefWidth="195.0"
+                   styleClass="check-button" text="ВИЙТИ"
+                   textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0"/>
+            </font>
+        </JFXButton>
+    </AnchorPane>
+    <Line endX="-81.39996337890625" endY="215.10000610351562" layoutX="1026.0" layoutY="96.0"
+          startX="-607.2000122070312" startY="215.10000610351562" stroke="#867e7e"/>
+    <Label layoutX="419.0" layoutY="251.0" prefHeight="40.0" prefWidth="250.0" text="Серця" textFill="WHITE">
+        <font>
+            <Font name="System Bold" size="20.0"/>
+        </font>
+    </Label>
+    <Label layoutX="419.0" layoutY="563.0" prefHeight="40.0" prefWidth="250.0" text="Досягнення" textFill="WHITE">
+        <font>
+            <Font name="System Bold" size="20.0"/>
+        </font>
+    </Label>
+    <AnchorPane layoutX="413.0" layoutY="615.0" prefHeight="192.0" prefWidth="527.0" styleClass="form-menu"
+                stylesheets="@styles.css"/>
+    <ImageView fitHeight="75.0" fitWidth="75.0" layoutX="443.0" layoutY="334.0" pickOnBounds="true"
+               preserveRatio="true">
+        <image>
+            <Image url="@Images/heart.png"/>
+        </image>
+    </ImageView>
+    <Line endX="-81.39996337890625" endY="215.10000610351562" layoutX="1025.0" layoutY="210.0"
+          startX="-607.2000122070312" startY="215.10000610351562" stroke="#867e7e"/>
+    <Label layoutX="544.0" layoutY="322.0" prefHeight="40.0" prefWidth="250.0" text="Поповнити серця" textFill="WHITE">
+        <font>
+            <Font name="System Bold" size="20.0"/>
+        </font>
+    </Label>
+    <Label layoutX="544.0" layoutY="362.0" prefHeight="50.0" prefWidth="348.0"
+           text="Отримайте повний запас сердець, щоб менше хвилюватися через помилки під час уроку." textFill="WHITE"
+           wrapText="true">
+        <font>
+            <Font name="System Bold" size="15.0"/>
+        </font>
+    </Label>
+</AnchorPane>

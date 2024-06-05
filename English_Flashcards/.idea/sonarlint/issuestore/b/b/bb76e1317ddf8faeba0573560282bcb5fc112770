@@ -1,0 +1,11 @@
+
+{
+java:S1854M"8Remove this useless assignment to local variable "user".(“ïÛ¨8ò¿“ùı1J$f14b1c27-3101-49c2-acda-4aa38a8d658d
+l
+java:S1481M")Remove this unused "user" local variable.(“ïÛ¨8ö¿“ùı1J$c576178e-ee83-4fd0-b604-678adb432c1f
+r	java:S106g"+Replace this use of System.err by a logger.(¸áÉ¬øÿÿÿÿ8ìÅÖıı1J$3e18e237-30e6-4d46-b718-98a73f76287c
+M	java:S106±"+Replace this use of System.err by a logger.(¸áÉ¬øÿÿÿÿ8ŠÙÛıı1
+f
+java:S1128"Remove this duplicated import.(Šúà§ùÿÿÿÿ8°À“ùı1J$e811f2b6-e5ba-4042-af50-fa7d2895caa6
+z
+java:S1068"2Remove this unused "deckRepository" private field.(ĞœÍìÿÿÿÿÿ8²À“ùı1J$907f42dc-e68e-42c0-ae87-238c89c360d6

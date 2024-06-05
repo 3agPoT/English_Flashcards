@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="moreOptionsPane" prefHeight="750.0" prefWidth="1500.0" style="-fx-background-color: #131f24;"
+            xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.english_flashcards.controller.cards.CreatingCardsController">
+    <Line endX="-235.5999755859375" endY="-386.0" layoutX="236.0" layoutY="153.0" startX="-235.5999755859375"
+          startY="690.0" stroke="#131f24"/>
+    <Line endX="1462.699951171875" endY="690.0" layoutX="246.0" layoutY="163.0" startX="-235.5999755859375"
+          startY="690.0" stroke="131f24"/>
+    <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#menu" pickOnBounds="true"
+               preserveRatio="true">
+        <image>
+            <Image url="@Images/logout.png"/>
+        </image>
+        <cursor>
+            <Cursor fx:constant="HAND"/>
+        </cursor>
+    </ImageView>
+    <AnchorPane layoutX="455.0" layoutY="67.0" prefHeight="720.0" prefWidth="600.0"
+                style="-fx-background-color: white;">
+        <children>
+            <AnchorPane fx:id="imageUrl" layoutX="149.0" layoutY="39.0" prefHeight="300.0" prefWidth="300.0"
+                        styleClass="form-profile" stylesheets="@styles.css"/>
+            <TextField fx:id="englishText" layoutX="204.0" layoutY="454.0" maxWidth="261.0" prefHeight="44.0"
+                       prefWidth="261.0" styleClass="input" stylesheets="@styles.css"/>
+            <TextField fx:id="translation" layoutX="204.0" layoutY="528.0" prefHeight="40.0" prefWidth="250.0"
+                       styleClass="input" stylesheets="@styles.css"/>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="496.0" layoutY="14.0"
+                       onMouseClicked="#openImageFileChooser" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@Images/edit.png"/>
+                </image>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="456.0" prefHeight="40.0" prefWidth="142.0"
+                   text="Ведіть англ слово">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="530.0" prefHeight="40.0" prefWidth="142.0"
+                   text="Ведіть переклад">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </Label>
+            <JFXButton alignment="CENTER" layoutX="219.0" layoutY="602.0" onAction="#addCard" prefHeight="50.0"
+                       prefWidth="160.0" styleClass="cards-button" stylesheets="@styles.css" text="Додати карточку">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </JFXButton>
+            <Label fx:id="errorLabel" alignment="CENTER" layoutX="50.0" layoutY="667.0" prefHeight="18.0"
+                   prefWidth="500.0" textFill="#FF0000">
+                <font>
+                    <Font name="Arial Bold Italic" size="14.0"/>
+                </font>
+            </Label>
+            <TextField fx:id="category" layoutX="204.0" layoutY="380.0" maxWidth="261.0" prefHeight="44.0"
+                       prefWidth="261.0" styleClass="input" stylesheets="@styles.css"/>
+            <Label alignment="CENTER" layoutX="15.0" layoutY="385.0" prefHeight="40.0" prefWidth="142.0"
+                   text="Додайте категорію">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </Label>
+        </children>
+    </AnchorPane>
+</AnchorPane>

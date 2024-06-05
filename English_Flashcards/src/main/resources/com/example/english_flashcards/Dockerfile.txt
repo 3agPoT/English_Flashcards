@@ -1,0 +1,8 @@
+# Використання офіційного образу Java з Docker Hub
+FROM openjdk:latest
+
+# Копіюємо скомпільований JAR-файл у контейнер
+COPY ./target/myapp.jar /app/
+
+# Команда для запуску додатку при старті контейнера
+CMD ["java", "-jar", "/app/myapp.jar"]
